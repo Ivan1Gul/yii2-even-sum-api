@@ -12,6 +12,7 @@ final class SumRequest
     public readonly array $numbers;
 
     /**
+     * @param array<string, mixed> $body
      * @throws BadRequestHttpException
      */
     public function __construct(array $body)

@@ -10,6 +10,9 @@ final class SumResponse
         public readonly int $sum
     ) {}
 
+    /**
+     * @return array<string, mixed>
+     */
     public function toArray(): array
     {
         return [

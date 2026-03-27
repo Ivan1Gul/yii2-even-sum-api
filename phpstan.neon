@@ -6,5 +6,9 @@ parameters:
         - services
         - http
         - components
+    bootstrapFiles:
+        - vendor/autoload.php
     ignoreErrors:
-        - '#Call to an undefined method yii\\base\\Module::#'
+        - '#Access to static property \$app on an unknown class Yii#'
+        - '#Constant YII_DEBUG not found#'
+        - '#does not specify its types#'

@@ -22,6 +22,9 @@ final class SumController extends Controller
         parent::__construct($id, $module, $config);
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function actionCalculate(): array
     {
         $request = new SumRequest(Yii::$app->request->getBodyParams());
