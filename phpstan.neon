@@ -1,0 +1,10 @@
+parameters:
+    level: 8
+    paths:
+        - controllers
+        - dto
+        - services
+        - http
+        - components
+    ignoreErrors:
+        - '#Call to an undefined method yii\\base\\Module::#'
