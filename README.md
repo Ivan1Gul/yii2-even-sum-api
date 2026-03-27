@@ -35,9 +35,16 @@ curl -X POST http://localhost:8000/sum \
 ```
 
 ## Tests and static analysis / Тести та статичний аналіз
+Linux/macOS
 ```bash
 make test   # PHPUnit
 make stan   # PHPStan level 8
+```
+
+Windows
+```bash
+docker-compose exec php ./vendor/bin/phpunit --colors=always   # PHPUnit
+docker-compose exec php ./vendor/bin/phpstan analyse   # PHPStan level 8
 ```
 
 ## Project structure / Структура проекту
